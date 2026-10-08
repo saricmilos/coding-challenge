@@ -54,6 +54,9 @@
     <!-- Add Company Modal CSS -->
     <link rel="stylesheet" href="add-company-modal.css?v=1">
 
+    <!-- CSV Upload Modal CSS -->
+    <link rel="stylesheet" href="csv-upload-modal.css?v=1">
+
     <!-- Sidebar CSS -->
     <link rel="stylesheet" href="sidebar.css?v=1">
 
@@ -62,8 +65,65 @@
 
     <!-- DARK MODE Company Search CSS -->
     <link rel="stylesheet" href="company-search-dark.css?v=3">
-    
 
+    <style>
+        /* CSV Upload Trigger Button */
+        .csv-upload-trigger-btn {
+            background: var(--button-primary);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.2s ease;
+            margin-top: 1rem;
+        }
+
+        .csv-upload-trigger-btn:hover {
+            background: var(--button-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(16, 163, 127, 0.3);
+        }
+
+        .csv-upload-trigger-btn:active {
+            transform: translateY(0);
+        }
+
+        /* Header actions wrapper */
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        /* Dark mode */
+        .dark-mode .csv-upload-trigger-btn {
+            background: var(--button-primary);
+        }
+
+        .dark-mode .csv-upload-trigger-btn:hover {
+            background: var(--button-hover);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .csv-upload-trigger-btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .header-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -143,6 +203,18 @@
                         <div class="minimal-header">
                             <h1>Search for a company</h1>
                             <p class="subtitle">Type a letter to see matching companies</p>
+                            
+                            <!-- Action Buttons -->
+                            <div class="header-actions">
+                                <button id="uploadCsvBtn" class="csv-upload-trigger-btn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                        <polyline points="17 8 12 3 7 8"></polyline>
+                                        <line x1="12" y1="3" x2="12" y2="15"></line>
+                                    </svg>
+                                    Upload CSV
+                                </button>
+                            </div>
                         </div>
 
                         <!-- Search Box -->
@@ -547,6 +619,9 @@
         <!-- Add Company Modal -->
         <?php include 'add-company-modal.php'; ?>
 
+        <!-- CSV Upload Modal -->
+        <?php include 'csv-upload-modal.php'; ?>
+
         <!-- Back to Top Button -->
         <button id="backToTop" class="button-glassy floating-top-btn">Back to Top</button>
 
@@ -565,6 +640,9 @@
 
     <!-- Add Company Modal JavaScript -->
     <script src="add-company-modal.js?v=1"></script>
+
+    <!-- CSV Upload Modal JavaScript -->
+    <script src="csv-upload-modal.js?v=1"></script>
 
     <!-- Sidebar JavaScript -->
     <script src="sidebar.js?v=1"></script>

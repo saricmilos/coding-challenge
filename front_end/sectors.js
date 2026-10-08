@@ -76,11 +76,17 @@ async function loadAllSectorsForTable() {
         sectorsElements.sectorsPaginationControls.style.display = 'none';
         
         // Determine which endpoint to use
-        const endpoint = sectorsState.showCompanyCounts 
-            ? '/sectors_with_counts/' 
-            : '/sectors_by_letter/?letter=';
+        // When not showing counts and no filter, we need to fetch all letters or use a different approach
+        let url;
+        if (sectorsState.showCompanyCounts) {
+            url = `${SECTORS_CONFIG.API_BASE_URL}/sectors_with_counts/`;
+        } else {
+            // Instead of empty letter, fetch all sectors by using a common starting letter
+            // or modify to fetch all at once. For now, let's use sectors_with_counts 
+            // even when counts aren't shown, then just hide the column
+            url = `${SECTORS_CONFIG.API_BASE_URL}/sectors_with_counts/`;
+        }
         
-        const url = `${SECTORS_CONFIG.API_BASE_URL}${endpoint}`;
         console.log('Fetching sectors from:', url);
         
         const response = await fetch(url, {

@@ -1,0 +1,12 @@
+cib_id,company_name,hq_country_id,operation,operation_date
+199,crisam.pe,Crisam Import,NEW_BATCH_MANUAL,2025-10-10
+202,dabpharmservice.com,DAB Pharmservice,NEW_BATCH_MANUAL,2025-10-10
+241,drivecure.in,Drivecure Healthcare,NEW_BATCH_MANUAL,2025-10-10
+252,earthoptics.com,Earthoptics,NEW_BATCH_MANUAL,2025-10-10
+401,hpeirl.com,HPE Ireland,NEW_BATCH_MANUAL,2025-10-10
+422,innosignbio.com,InnoSIGN,NEW_BATCH_MANUAL,2025-10-10
+592,pathovet.cl,Laboratorio Pathovet,NEW_BATCH_MANUAL,2025-10-10
+736,softwarepoint.com,Whitelake Software Point,NEW_BATCH_MANUAL,2025-12-08
+863,terpenia.eu,Terpenia Phytotherapeutics,NEW_BATCH_MANUAL,2025-10-10
+869,theclinivex.com,Clinivex,NEW_BATCH_MANUAL,2025-10-10
+932,wicom.com,Wicom Analytics,NEW_BATCH_MANUAL,2025-10-10

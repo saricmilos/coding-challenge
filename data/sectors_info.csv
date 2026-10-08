@@ -1,0 +1,183 @@
+sector_id,sector_name,sector_radius_km,parent_sector_id
+1,Advertising Agencies,25,0.0
+50,Aerospace and Defense,25,0.0
+2,Agriculture,25,0.0
+97,Alternative Asset Management,25,0.0
+3,Alternative Energy,25,0.0
+4,Apparel Retailers,5,0.0
+51,Apparels,25,0.0
+5,Asset Management,25,0.0
+96,Asset Management (consulting),25,0.0
+101,Asset Management (devel. fund),25,0.0
+99,Asset Management (diversified),25,0.0
+100,Asset Management (inv. holding),25,0.0
+98,Asset Management (sovereign wealth),25,0.0
+95,Asset Management (traditional),25,0.0
+82,Asset Servicing,25,0.0
+6,Automobiles and Auto Parts,25,0.0
+7,Banks,3,0.0
+8,Biotech,25,0.0
+9,Broadcasting,25,0.0
+52,Cable,25,0.0
+10,Chemicals,25,0.0
+53,Computer Hardware,25,0.0
+12,Construction and Engineering,25,0.0
+11,Construction Materials,25,0.0
+54,Consumer Lending,3,0.0
+13,Consumer Personal Products,25,0.0
+55,Consumer Products & Services,25,0.0
+56,Containers and Packaging,25,0.0
+14,Diversified Financials,3,0.0
+57,Diversified Retailers,3,0.0
+58,Education Services,25,0.0
+15,Electronic Equipment,25,0.0
+16,Entertainment,25,0.0
+59,Exchanges,25,0.0
+17,Food and Beverage,25,0.0
+60,Gambling,25,0.0
+19,Home Construction,25,0.0
+20,Home Improvement Retailers,10,0.0
+83,Institutional Brokerage,25,0.0
+22,Insurance Brokers,25,0.0
+61,Internet & Software Services,25,0.0
+21,IT Consulting,25,0.0
+62,Life Insurance,25,0.0
+63,Lodging,25,0.0
+24,Machinery and Equipment,25,0.0
+25,Medical Equipment and Supplies,25,0.0
+26,Metals and Mining,25,0.0
+64,Motion Pictures / Audio Visual,10,0.0
+65,Oil and Gas,25,0.0
+27,Online Services,25,0.0
+28,Other Energy,25,0.0
+66,Other Financials,25,0.0
+29,Other Industrials,25,0.0
+67,Other Materials,25,0.0
+68,Other Retailing,3,0.0
+69,Other Technology,25,0.0
+30,P&C and Reinsurance,25,0.0
+70,Petrochemicals,25,0.0
+31,Pharmaceuticals,25,0.0
+71,Pipelines,25,0.0
+72,Power,25,0.0
+32,Professional Services,25,0.0
+73,Publishing,25,0.0
+74,Pulp and Paper,25,0.0
+33,Real Estate Investment,25,0.0
+75,Real Estate Management,25,0.0
+76,REIT,25,0.0
+77,Retailing - Auto,10,0.0
+78,Retailing - Electronics,5,0.0
+34,Retailing - Food,3,0.0
+35,Semiconductors,25,0.0
+36,Software,25,0.0
+37,Specialty Retailers,3,0.0
+38,Telecommunications Equipment,25,0.0
+39,Telecommunications Services,25,0.0
+79,Tobacco,25,0.0
+40,Transportation,25,0.0
+80,Travel,25,0.0
+81,Water and Disposal Services,25,0.0
+41,Wealth Management / Brokerage,10,0.0
+42,Wireless,3,0.0
+23,Construction Services,250,0.0
+169,Technical Building Services,250,23.0
+171,HVAC and Plumbing,250,23.0
+172,Energy Renovation Consulting,250,23.0
+174,Painting Services (Renovation/Insulation),250,23.0
+176,Test,100,100.0
+177,AI Conversation,25,21.0
+178,Egovernment / GovTech,25,21.0
+213,Medtech Services 2,25,0.0
+18,Healthcare Providers,3,0.0
+170,General Physicians,3,18.0
+138,Orthopedic,10,18.0
+139,Cardiology,10,18.0
+179,Child and Youth Welfare,3,18.0
+180,Medtech Services,25,0.0
+214,Medtech Services 3,25,0.0
+215,Wealth Management,10,0.0
+216,Insurance Brokerage,25,0.0
+217,Youth Mental Health Rehabilitation,3,18.0
+102,Activist,25,97.0
+43,Agricultural Banks,3,7.0
+103,Aircraft Leasing,25,97.0
+92,Alternatives,25,97.0
+130,Automation,25,24.0
+142,Aviation and Airport Software,25,36.0
+87,Bakeries,3,34.0
+93,Car Rental / Leasing,25,32.0
+94,Car Sharing,25,32.0
+134,Classifieds,25,27.0
+45,Commercial Lending Banks,3,7.0
+104,Commodities,25,97.0
+44,Consumer Lending Banks,3,7.0
+46,Credit-card Banks,3,7.0
+140,Damage Repair and Remediation Services,25,12.0
+105,Digital Assets,25,97.0
+133,Ecommerce,25,27.0
+122,ER&D,25,32.0
+86,Fashion Retail Chain,5,4.0
+137,Food Delivery,25,27.0
+132,Hairdressers,25,55.0
+106,Hedge Fund,25,97.0
+107,Impact,25,97.0
+91,Information Services,25,32.0
+108,Infrastructure,25,97.0
+109,Insurance-linked,25,97.0
+47,International Banks,3,7.0
+110,Litigation Finance,25,97.0
+135,Meal Kits,25,27.0
+48,Mortgage Lending Banks,3,7.0
+111,"Music, Entertainment, Sports",25,97.0
+90,Mutual Banks,3,7.0
+136,Online Printing & Customization,25,27.0
+121,Opticians,3,37.0
+49,Other Banks,3,7.0
+85,Outlet Centers,5,4.0
+131,Pet Shops,3,37.0
+112,Private Debt,25,97.0
+113,Private Equity,25,97.0
+114,Real Assets,25,97.0
+115,Real Estate,25,97.0
+116,Renewable Energy,25,97.0
+89,Savings Banks,3,7.0
+117,Secondaries,25,97.0
+118,Sharia / Ethics,25,97.0
+119,Solutions,25,97.0
+84,Sports and Outdoor,5,4.0
+120,Venture Capital,25,97.0
+144,Metal Forming,25,6.0
+145,Accounting Services,25,32.0
+146,Aviation Maintenance and Repair,25,32.0
+148,Metals Trading,25,26.0
+149,Metal Recycling,25,29.0
+150,Commercial Clients,25,22.0
+151,Retail Clients,25,22.0
+152,Mixed Clients,25,22.0
+153,Tax Advisors,25,32.0
+154,Alternative Asset Management - Other,25,97.0
+155,Sample Sector,25,0.0
+156,Sample Subsector,25,155.0
+157,Pharma Services,25,0.0
+218,"Access Systems, Security Electronics and Fencing Solutions",25,32.0
+158,Commercialization,25,157.0
+159,Packaging and Distribution,25,157.0
+160,CDMO,25,157.0
+173,Electrical Installation,250,23.0
+123,Dialysis Services,3,18.0
+126,Pharmacies,3,18.0
+166,Material and Construction Material Testing,100,165.0
+167,Companies from Jenkins,25,0.0
+175,Guardrail Installation and Maintenance,250,23.0
+163,Cable and Pipeline Network Engineering,250,23.0
+143,Damage Repair and Remediation,250,23.0
+165,"Testing, Inspection and Certification",250,23.0
+129,Veterinary Care,3,18.0
+127,Rehabilitation & Therapy,3,18.0
+124,Clinics & Acute Care,3,18.0
+147,Fitness and Wellness Facilities,3,18.0
+161,Elderly Care / Assisted Living,3,18.0
+125,Dentists,3,18.0
+164,Laboratories,3,18.0
+168,Palliative Care,3,18.0

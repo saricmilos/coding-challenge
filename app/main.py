@@ -9,11 +9,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import func
 from fastapi import Header
 
-# Upload CSV
-from fastapi import UploadFile, File
-import pandas as pd
-from io import BytesIO
-
 # --- Add data folder to path so we can import data_structures.py ---
 from data.data_structures import Base, Company, CompanySector, Sector
 
@@ -293,48 +288,6 @@ def add_sector(new_sector: SectorCreateModel, db: Session = Depends(get_db)):
 
 # Upload CSV
 
-@app.post("/upload_companies_csv/")
-def upload_companies_csv(file: UploadFile = File(...), db: Session = Depends(get_db)):
-    # Check if uploaded file is CSV
-    if not file.filename.endswith(".csv"):
-        raise HTTPException(status_code=400, detail="Only CSV files are allowed")
-    
-    # Read CSV into pandas DataFrame
-    try:
-        contents = file.file.read()
-        df = pd.read_csv(BytesIO(contents))
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Failed to read CSV: {e}")
-    
-    # Check required column
-    if "company_name" not in df.columns and "cib_id" not in df.columns:
-        raise HTTPException(status_code=400, detail="CSV must have 'company_name' or 'cib_id' column")
-    
-    results = []
-    for _, row in df.iterrows():
-        company = None
-        if "cib_id" in row and pd.notna(row["cib_id"]):
-            company = db.query(Company).filter(Company.cib_id == row["cib_id"]).first()
-        elif "company_name" in row and pd.notna(row["company_name"]):
-            company = db.query(Company).filter(Company.company_name == row["company_name"]).first()
-        
-        if company:
-            company_sector = db.query(CompanySector).filter(CompanySector.cib_id == company.cib_id).first()
-            sector = db.query(Sector).filter(Sector.sector_id == company_sector.sector_id).first() if company_sector else None
-            results.append({
-                "company_name": company.company_name,
-                "cib_id": company.cib_id,
-                "sector_name": sector.sector_name if sector else None
-            })
-        else:
-            results.append({
-                "company_name": row.get("company_name", None),
-                "cib_id": row.get("cib_id", None),
-                "sector_name": None
-            })
-
-    # Return results as JSON (could be converted back to CSV if needed)
-    return {"results": results}
 
 # --- Run Uvicorn ---
 if __name__ == "__main__":
